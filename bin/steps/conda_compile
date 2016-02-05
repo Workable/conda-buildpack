@@ -1,8 +1,8 @@
 if [ ! -d /app/.heroku/miniconda ]; then
     puts-step "Preparing Python3/Miniconda Environment (3.8.3)"
-    curl -Os http://repo.continuum.io/miniconda/Miniconda3-3.8.3-Linux-x86_64.sh
-    bash Miniconda3-3.8.3-Linux-x86_64.sh  -p /app/.heroku/miniconda/ -b | indent
-    rm -fr Miniconda3-3.8.3-Linux-x86_64.sh
+    curl -Os http://repo.continuum.io/miniconda/Miniconda3-3.19.0-Linux-x86_64.sh
+    bash Miniconda3-3.19.0-Linux-x86_64.sh  -p /app/.heroku/miniconda/ -b | indent
+    rm -fr Miniconda3-3.19.0-Linux-x86_64.sh
 
     conda install pip --yes | indent
 fi
